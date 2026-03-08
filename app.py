@@ -1,12 +1,13 @@
 import os
 import uuid
+import tempfile
 from flask import Flask, render_template, request, jsonify
 from werkzeug.utils import secure_filename
 from modules.hash import hash_file, verify_integrity
 from modules.encryption import aes_encrypt, aes_decrypt, rsa_encrypt, rsa_decrypt
 from modules.password import check_strength,hash_pw
 
-UPLOAD_FOLDER = 'uploads'
+UPLOAD_FOLDER = os.path.join(tempfile.gettempdir(), 'uploads')
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
