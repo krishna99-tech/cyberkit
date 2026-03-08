@@ -20,7 +20,7 @@ CyberKit is a comprehensive, web-based cybersecurity toolkit built with Python (
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/cyberkit.git
+   git clone https://github.com/krishna99-tech/cyberkit.git
    cd cyberkit
    ```
 
